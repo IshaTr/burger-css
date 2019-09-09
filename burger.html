@@ -26,13 +26,17 @@
       }
 
       #top-bun {
-        height: 200px;
+        height: 180px;
         border-radius: 200px 200px 20px 20px;
+        border-top: 32px solid #e46a00;
+        border-bottom: 8px solid #e46a00;
       }
 
       #bottom-bun {
-        height: 80px;
+        height: 72px;
         border-radius: 20px;
+        border-top: 8px solid #e46a00;
+        border-bottom: 8px solid #e46a00;
       }
 
       .lettuce-container {
@@ -40,11 +44,13 @@
         display: flex;
         border-radius: 22%;
         background: #9e9d24;
+        position: relative;
+        z-index: 9;
       }
 
       .lettuce {
         text-align: center;
-        height: 30px;
+        height: 24px;
         width: 100%;
         position: relative;
       }
@@ -54,26 +60,31 @@
         position: absolute;
         top: 0;
         left: 0;
-        height: 30px;
+        height: 10px;
         width: 51%;
         background: #aeea00;
         transform: skew(0deg, -6deg);
+        border-top: 8px solid #91c300;
+        border-bottom: 8px solid #91c300;
       }
       .lettuce::after {
         content: "";
         position: absolute;
         top: 0;
         right: 0;
-        height: 30px;
+        height: 10px;
         width: 50%;
         background: #aeea00;
-        transform: skew(0deg, 6deg);
+        transform: skew(0deg, -6deg);
+        border-top: 8px solid #91c300;
+        border-bottom: 8px solid #91c300;
       }
 
-      .tomato-wrapper {
+      .veggie-wrapper {
         width: 100%;
         display: flex;
         position: relative;
+        z-index: 9;
       }
       #tomato {
         background: #d84315;
@@ -91,24 +102,176 @@
         transform: rotate(7deg);
         left: 132px;
       }
+      #pickle {
+        background: #827717;
+        height: 32px;
+        border-radius: 30px 30px 0px 0px;
+        position: absolute;
+        width: 30%;
+        transform: rotate(-2deg);
+        left: 72px;
+      }
+      #cheese-slice {
+        background: #ffeb3b;
+        height: 21px;
+        position: relative;
+        border-top-left-radius: 40%;
+        border-top-right-radius: 90%;
+      }
+      #slice-corner {
+        background: #ffeb3b;
+        height: 70px;
+        width: 100px;
+        position: absolute;
+        right: 23px;
+        top: -31px;
+        z-index: 0;
+        transform: rotate(40deg);
+      }
+
       #patty {
         height: 60px;
         background: #795548;
         border-radius: 20px;
+        border-bottom: 9px solid #5f3c2f;
+      }
+
+      .seed-left,
+      .seed-right {
+        width: 10px;
+        height: 7px;
+        border-radius: 100%;
+        background: #ffeb3b;
+        position: absolute;
+      }
+
+      .seed-left {
+        transform: rotate(-45deg);
+      }
+
+      .seed-right {
+        transform: rotate(45deg);
+      }
+
+      .seed-white-left1 {
+        left: 84px;
+      }
+
+      .seed-white-left2 {
+        left: 64px;
+        top: 24px;
+      }
+
+      .seed-white-left3 {
+        left: 36px;
+        top: 44px;
+      }
+
+      .seed-white-left4 {
+        left: 90px;
+        top: 44px;
+      }
+
+      .seed-white-left5 {
+        left: 25px;
+        top: 92px;
+      }
+
+      .seed-white-left6 {
+        left: 90px;
+        top: 44px;
+      }
+
+      .seed-white-right1 {
+        right: 84px;
+      }
+
+      .seed-white-right2 {
+        right: 64px;
+        top: 24px;
+      }
+
+      .seed-white-right3 {
+        right: 36px;
+        top: 44px;
+      }
+
+      .seed-white-right4 {
+        right: 90px;
+        top: 44px;
+      }
+
+      .seed-white-right5 {
+        right: 25px;
+        top: 92px;
+      }
+
+      .seed-white-right6 {
+        right: 90px;
+        top: 44px;
+      }
+      #mid-seed-wrapper {
+        transform: rotate(45deg);
+        top: 57px;
+        left: 138px;
+        position: relative;
+      }
+      #mid-seed-wrapper2 {
+        transform: rotate(47deg);
+        top: 130px;
+        left: 142px;
+        position: relative;
       }
     </style>
   </head>
   <body>
     <div class="cheese-burger">
-      <div id="top-bun"></div>
+      <div id="top-bun">
+        <div id="left-seed-wrapper">
+          <div class="seed-white-left1 seed-left"></div>
+          <div class="seed-white-left2 seed-left"></div>
+          <div class="seed-white-left3 seed-left"></div>
+          <div class="seed-white-left4 seed-left"></div>
+          <div class="seed-white-left5 seed-left"></div>
+          <div class="seed-white-left6 seed-left"></div>
+        </div>
+        <div id="mid-seed-wrapper">
+          <div class="seed-white-left1 seed-left"></div>
+          <div class="seed-white-left2 seed-left"></div>
+          <div class="seed-white-left3 seed-left"></div>
+          <div class="seed-white-left4 seed-left"></div>
+          <div class="seed-white-left5 seed-left"></div>
+          <div class="seed-white-left6 seed-left"></div>
+        </div>
+        <div id="mid-seed-wrapper2">
+          <div class="seed-white-left1 seed-left"></div>
+          <div class="seed-white-left2 seed-left"></div>
+          <div class="seed-white-left3 seed-left"></div>
+          <div class="seed-white-left4 seed-left"></div>
+          <div class="seed-white-left5 seed-left"></div>
+          <div class="seed-white-left6 seed-left"></div>
+        </div>
+        <div id="right-seed-wrapper">
+          <div class="seed-white-right1 seed-right"></div>
+          <div class="seed-white-right2 seed-right"></div>
+          <div class="seed-white-right3 seed-right"></div>
+          <div class="seed-white-right4 seed-right"></div>
+          <div class="seed-white-right5 seed-right"></div>
+          <div class="seed-white-right6 seed-right"></div>
+        </div>
+      </div>
       <div class="lettuce-container">
         <div class="lettuce"></div>
         <div class="lettuce"></div>
       </div>
-      <div class="tomato-wrapper">
+      <div class="veggie-wrapper">
         <div id="tomato"></div>
+        <div id="pickle"></div>
         <div id="onion"></div>
         <div id="tomato"></div>
+      </div>
+      <div id="cheese-slice">
+        <div id="slice-corner"></div>
       </div>
       <div id="patty"></div>
       <div class="lettuce-container">
